@@ -1,0 +1,39 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+
+
+<div class="row">
+  <div class="col-2" style="text-align: right">
+    <nav class="navbar">
+
+      <!-- logo -->
+      <div class="navbar-brand">
+        <a class="navbar-item">
+
+          <img src="assets/img/images5.png" style="image-rendering: auto" [routerLink]="['/']">
+        </a>
+      </div>
+    </nav>
+
+
+  </div>
+  <div class="col-10" style="color:brown; text-align: center">
+    <h1>
+      PACE - Platform for Accelerated Connectivity Engine.
+    </h1>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-2" style="color:brown; text-align: justify; border-right: double firebrick; border-top: double firebrick">
+    <ul>
+      <li><a routerLink="placeOrder" routerLinkActive="active">Place Order</a></li>
+      <li><a routerLink="showOrderStatus" routerLinkActive="active">Show Order Status</a></li>
+      <li><a routerLink="updateOrderStatus" routerLinkActive="active">Update Order Status</a></li>
+      <li><a routerLink="insights" routerLinkActive="active">Insights</a></li>
+    </ul>
+  </div>
+  <div class="col-10"   style = "border-top: double firebrick">
+    <router-outlet></router-outlet>
+  </div>
+</div>
